@@ -11449,10 +11449,33 @@ textarea.form-control-lg {
   .contenedor .subcontenedor {
     min-height: 110vh;
   }
+  .row-1.flex-md-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logos img {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
 }
 @media (min-width: 776px) {
   .contenedor .subcontenedor {
     min-height: 60vh; /* Ajusta la altura para pantallas más grandes */
+  }
+  .logos {
+    position: relative;
+    margin-left: auto;
+    margin-right: 50px;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 50px;
   }
 }
 /*li:hover {
@@ -11609,8 +11632,18 @@ textarea.form-control-lg {
   margin: 0 auto;
 }
 
+.btn-contact-us {
+  width: 100%;
+  max-width: 90px;
+  margin-top: 10px;
+  font-size: 12px !important;
+  padding: 10px 4px 10px 4px !important;
+  margin-left: 10px;
+  margin-top: 5px !important;
+}
+
 .form-control {
-  width: 75%;
+  width: 100%;
   max-width: none;
   min-width: 50%;
   display: flex;
@@ -11627,14 +11660,13 @@ textarea.form-control-lg {
   align-items: center;
 }
 
-.d-flex {
+/*.d-flex {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-}
-
+}*/
 /*.d-block{
   display: flex;
   text-align: left;
@@ -11654,9 +11686,10 @@ textarea.form-control-lg {
 .footer-elementos {
   display: inline-block;
   text-align: left;
-  padding-inline-start: 2px;
-  margin: 0;
+  margin: 1px auto;
   width: auto;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .footer2 {
@@ -11672,7 +11705,7 @@ body {
   font-family: "Rubik", sans-serif;
   height: 100% !important;
   background-color: #F8F9FB !important;
-  max-width: 99%;
+  max-width: 100%;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -11743,9 +11776,8 @@ footer {
 }
 
 .form-control {
-  text-decoration: underline;
   color: black;
-  text-align: center;
+  text-align: start;
 }
 
 .invalid-tooltip {
@@ -11909,13 +11941,13 @@ footer {
   background-color: #5265E1;
   width: 100%;
   height: 100%;
-  padding: 50px;
+  padding: 2px;
   /*padding-bottom: 0px;*/
   margin: 0 auto;
 }
 
 .form-control {
-  width: 75%;
+  width: 105%;
   max-width: none;
   min-width: 50%;
   display: flex;
@@ -11932,7 +11964,7 @@ footer {
   align-items: center;
 }
 
-.d-flex {
+.emailValidation {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -11940,6 +11972,13 @@ footer {
   align-items: center;
 }
 
+/*.d-flex{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}*/
 /*.d-block{
   display: flex;
   text-align: left;
@@ -11949,7 +11988,7 @@ footer {
 }*/
 .bookmark-logo {
   width: auto;
-  margin: 0 auto;
+  margin-inline-start: 25%;
 }
 
 .d-none {
@@ -11959,9 +11998,10 @@ footer {
 .footer-elementos {
   display: inline-block;
   text-align: left;
-  padding-inline-start: 2px;
-  margin: 0;
+  margin: 1px auto;
   width: auto;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .footer2 {
@@ -11972,12 +12012,17 @@ footer {
   width: 100%;
 }
 
+.social {
+  margin-left: 20px;
+}
+
 /*FOOTER EJ2*/
 body {
   font-family: "Rubik", sans-serif;
   height: 100% !important;
   background-color: #F8F9FB !important;
-  max-width: 99%;
+  max-width: 100%;
+  margin-bottom: 0;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -12048,9 +12093,12 @@ footer {
 }
 
 .form-control {
-  text-decoration: underline;
   color: black;
-  text-align: center;
+  text-align: start;
+}
+
+.row {
+  --bs-gutter-x: 0;
 }
 
 .invalid-tooltip {
@@ -12061,4 +12109,26 @@ footer {
   top: 100%;
   left: 0;
   width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.img-fluid-logos {
+  max-width: 100%;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 20px;
 }/*# sourceMappingURL=main.css.map */
